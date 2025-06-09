@@ -9,7 +9,7 @@ function render() {
   assignmentList.innerHTML = '';
   assignments.forEach(({name, grade}, index) => {
     const li = document.createElement('li');
-    li.textContent = ${name}: ${grade.toFixed(2)};
+    li.textContent = `${name}: ${grade.toFixed(2)}`;
     assignmentList.appendChild(li);
   });
 
