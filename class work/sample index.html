@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .container {
+Valois Niyigaba
+13:46
+Noo
+Bernard Lamptey
+13:46
+.container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        /* Step 3: Add Media Query Below */
+        @media screen and (max-width: 768px){
+            .container{
+                display: flex;
+                flex-directon: column;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Layout</h1>
+    <p>Resize the window to see the font and layout change using media queries.</p>
+
+<div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+</body>
+
+</html>
